@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 
 export default class Bomb extends Component {
 
-   constructor(props) {
+  constructor(props) {
     super(props)
     this.state = {
       secondsLeft: this.props.initialCount
     }
   }
 
-   render() {
+  render() {
     if (this.state.secondsLeft === 0) {
       return (
         <div className="bomb">
